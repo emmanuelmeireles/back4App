@@ -21,9 +21,32 @@ PS: se você não conseguir entregar tudo, entregue pelo menos o link do github 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abra seu chamado</title>
+    <title>Consulta OS</title>
 </head>
 <body>
-    
+  <h1>Cadastro de Chamado</h1>  
+  <form action="salvarOS" method="post">
+    <label for="nome">Nome: </label><br>
+    <input type="text" id="nome" name = "nome" required>
+    <br>
+    <label for="email">E-mail: </label><br>
+    <input type="text" id="email" name = "email" required>
+    <br>
+    <label for="assunto">Assunto: </label><br>
+    <input type="text" id = "email" name="assunto" required>
+    <br>
+    <label for="mensagem">Mensagem: </label><br>
+    <input type="text" id = "mensagem" name="mensagem" required>
+    <br>
+    <br>
+    <input type = "submit" value="enviar"><br>
+  </form>
+  <script>
+    document.getElementById("salvarOS").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Aqui você pode adicionar o código para enviar os dados para o back-end
+        // Por exemplo, usando JavaScript para fazer uma requisição AJAX
+    });
+</script>
 </body>
 </html>

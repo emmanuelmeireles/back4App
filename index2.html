@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta dos Chamados</title>
+</head>
+<body>
+    <h1>Execução do chamado</h1>
+    
+    <h2>Filtrar Chamados</h2>
+    <form id="chamadosExistentes">
+        <input type="checkbox" id="naoFinalizados" name="naoFinalizados">
+        <label for="naoFinalizados">Não finalizados</label><br>
+        <input type="submit" value="Filtrar">
+    </form>
+
+    <h2>Chamados</h2>
+    <section id="chamadosContainer">
+        
+    </section>
+
+    <h2>Responder e Finalizar</h2>
+    <form id="respostaChamados">
+        <label for="resposta">Resposta: </label>
+        <br>
+        <textarea id="resposta" name="resposta"></textarea><br>
+        <input type="submit" value="Responder e Finalizar">
+    </form>
+
+    <script>
+        document.getElementById("chamadosExistente").addEventListener("submit", function() {
+            event.preventDefault();
+            // nao consigo entender essa parte.
+        });
+
+        document.getElementById("respostaChamados").addEventListener("submit", function() {
+            event.preventDefault();
+            // nao consigo entender essa parte 
+        });
+    </script>
+</body>
+</html>
